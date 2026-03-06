@@ -57,7 +57,7 @@ export default function Contact() {
             <div className="info-list">
               <div className="info-item">
                 <strong>Phone</strong>
-                <span>+1 xxx xxx xxxx</span>
+                <span>+1 xxx xxx 7286</span>
               </div>
 
               <div className="info-item">
