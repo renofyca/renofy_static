@@ -17,9 +17,15 @@ export default function CTASection() {
             <Link to="/contact" className="btn btn-gold">
               Get Free Quote
             </Link>
-            <Link to="/services" className="btn btn-secondary">
-              View Services
-            </Link>
+            {location.pathname === "/services" ? (
+              <Link to="/projects" className="btn btn-secondary">
+               View Projects
+               </Link>
+            ) : (
+              <Link to="/services" className="btn btn-secondary">
+               View Services
+              </Link>
+            )}
           </div>
         </div>
       </div>
