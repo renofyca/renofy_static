@@ -1,10 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function CTASection() {
+
+  const location = useLocation();
+
   return (
     <section className="section">
       <div className="container">
         <div className="cta-box">
+
           <div>
             <h2>Ready to Transform Your Space?</h2>
             <p>
@@ -17,16 +21,19 @@ export default function CTASection() {
             <Link to="/contact" className="btn btn-gold">
               Get Free Quote
             </Link>
+
             {location.pathname === "/services" ? (
               <Link to="/projects" className="btn btn-secondary">
-               View Projects
-               </Link>
+                View Projects
+              </Link>
             ) : (
               <Link to="/services" className="btn btn-secondary">
-               View Services
+                View Services
               </Link>
             )}
+
           </div>
+
         </div>
       </div>
     </section>
