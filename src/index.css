@@ -646,12 +646,13 @@ main {
   .info-card {
     padding: 22px;
   }
- .hero-video-container {
+.hero-video-container {
   position: relative;
   height: 85vh;
-  overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .hero-video {
@@ -670,15 +671,29 @@ main {
 
 .hero-content {
   position: relative;
+  text-align: center;
   color: white;
   z-index: 2;
+  max-width: 700px;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
+  margin-bottom: 20px;
 }
 
 .hero-content span {
   color: #d4af37;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 } 
 }
