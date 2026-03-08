@@ -726,4 +726,9 @@ main {
     grid-template-columns: 1fr !important;
   }
 }
-
+.cta-box .btn-secondary {
+  background: rgba(255,255,255,0.12);
+  color: white;
+  border: 1px solid #d4af37;
+  backdrop-filter: blur(6px);
+}
