@@ -4,29 +4,27 @@ export default function Hero() {
   return (
     <section className="hero-video-container">
 
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="hero-video"
-      >
+      {/* Background Video */}
+      <video autoPlay muted loop playsInline className="hero-video">
         <source src="/renofy_static/videos/hero-video.mp4" type="video/mp4" />
       </video>
 
+      {/* Dark overlay */}
       <div className="hero-overlay"></div>
 
+      {/* Hero Content */}
       <div className="hero-content container">
+
         <h1>
-          Premium <span>Construction</span> & Renovation
+          Transform Your Home with <span>Renofy</span>
         </h1>
 
         <p>
-          Transform your home with modern design, quality craftsmanship,
-          and trusted renovation services across Toronto and the GTA.
+          Premium construction and renovation services across Toronto and the GTA.
+          We deliver modern designs, quality craftsmanship, and beautiful living spaces.
         </p>
 
-        <div className="hero-actions">
+        <div className="hero-buttons">
           <Link to="/contact" className="btn btn-gold">
             Get Free Quote
           </Link>
@@ -35,8 +33,8 @@ export default function Hero() {
             View Projects
           </Link>
         </div>
-      </div>
 
+      </div>
     </section>
   );
 }
